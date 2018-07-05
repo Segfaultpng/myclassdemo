@@ -39,4 +39,20 @@ public class StudentTest {
 
         Assert.assertEquals(expected,actual);
     }
+
+    @Test
+    public void testSetFirstName(){
+        //Student name is Stephen
+
+        student.setFirstname("Jamil");
+
+        //expected should be Jamil
+        String expected = "Jamil";
+
+        String actual = student.getFirstName();
+
+        Assert.assertEquals(expected,actual);
+
+
+    }
 }
