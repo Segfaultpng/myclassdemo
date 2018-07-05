@@ -6,19 +6,37 @@ public class StudentTest {
 
     Student student;
 
-@Before
-public void setup(){
-    student = new Student("Stephen","Pettus","cs9stephen@gmail.com","123");
-}
+    @Before
+    public void setup(){
+        student = new Student("Stephen","Pettus","cs9stephen@gmail.com","123");
+    }
 
-@Test
-public void testGetFIrstName(){
+    @Test
+    public void testGetFirstName(){
 
-    String expected = "Stephen";
-    String acutal = student.getFirstName();
+        String expected = "Stephen";
+        String actual = student.getFirstName();
 
-    Assert.assertEquals(expected,acutal);
+        Assert.assertEquals(expected,actual);
 
-}
+    }
 
+    @Test
+    public void  testGetLastName(){
+
+        String expected = "Pettus";
+        String actual = student.getLastName();
+
+        Assert.assertEquals(expected,actual);
+
+    }
+
+    @Test
+    public void testGetEmail(){
+
+        String expected = "cs9stephen@gmail.com";
+        String actual = student.getEmail();
+
+        Assert.assertEquals(expected,actual);
+    }
 }
