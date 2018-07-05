@@ -55,4 +55,34 @@ public class StudentTest {
 
 
     }
+
+    @Test
+    public void testSetLastName(){
+        //Student name is Stephen
+
+        student.setLastname("Jamil");
+
+        //expected should be Jamil
+        String expected = "Jamil";
+
+        String actual = student.getLastName();
+
+        Assert.assertEquals(expected,actual);
+
+    }
+
+    @Test
+    public void testSetEmail(){
+        //Student name is Stephen
+
+        student.setEmail("Jamil");
+
+        //expected should be Jamil
+        String expected = "Jamil";
+
+        String actual = student.getEmail();
+
+        Assert.assertEquals(expected,actual);
+
+    }
 }
