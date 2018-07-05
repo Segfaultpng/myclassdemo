@@ -58,12 +58,12 @@ public class StudentTest {
 
     @Test
     public void testSetLastName(){
-        //Student name is Stephen
+        //Student name is Pettus
 
-        student.setLastname("Jamil");
+        student.setLastname("Branahm");
 
-        //expected should be Jamil
-        String expected = "Jamil";
+        //expected should be Branham
+        String expected = "Branham";
 
         String actual = student.getLastName();
 
@@ -75,10 +75,10 @@ public class StudentTest {
     public void testSetEmail(){
         //Student name is Stephen
 
-        student.setEmail("Jamil");
+        student.setEmail("student@slikrick.com");
 
         //expected should be Jamil
-        String expected = "Jamil";
+        String expected = "student@slikrick.com";
 
         String actual = student.getEmail();
 
