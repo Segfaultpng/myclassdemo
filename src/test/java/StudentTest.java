@@ -31,7 +31,7 @@ public class StudentTest {
         student.learn(5);
         double actual = student.getCredits();
 
-        Assert.assertEquals(expected,actual);
+        Assert.assertEquals(expected,actual,.0000000001f);
     }
 
     @Test
@@ -42,7 +42,7 @@ public class StudentTest {
 
         double actual = student.getMoney();
 
-        Assert.assertEquals(expected,actual);
+        Assert.assertEquals(expected,actual,.00000001f);
 
     }
 
@@ -54,7 +54,7 @@ public class StudentTest {
 
         double actual = student.getCredits();
 
-        Assert.assertEquals(expected,actual);
+        Assert.assertEquals(expected,actual,.00000001f);
     }
 
     @Test
