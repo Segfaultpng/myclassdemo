@@ -70,6 +70,14 @@ public class StudentTest {
 
     }
 
+    @Test
+    public void testIds(){
+
+        Assert.assertTrue(true);
+
+
+    }
+
 
 
 }
