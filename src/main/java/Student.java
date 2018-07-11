@@ -9,7 +9,7 @@ public class Student extends Person {
 
 
 
-    private final double wage = 10.00;
+    private final double wage = 10.00; //an hr
 
     public Student(String newFirstName, String newLastName, String newEmail, String newPassword) {
 
@@ -28,7 +28,10 @@ public class Student extends Person {
      * **/
     public int getWorkedHours() {
 
-        return 0;
+        return this.workedHours;
+
+
+
     }
 
     /*
@@ -37,6 +40,8 @@ public class Student extends Person {
      * **/
     public void setWorkedHours(int workedHours) {
 
+        this.workedHours = workedHours;
+
     }
 
     /*
@@ -44,12 +49,14 @@ public class Student extends Person {
      * return money
      * **/
     public double getMoney() {
-        return 0;
+        return this.money;
     }
     /*
      * Setter for money
      * **/
     public void setMoney(double money) {
+
+        this.money = money;
 
     }
 
@@ -58,7 +65,7 @@ public class Student extends Person {
      * return credits
      * **/
     public double getCredits() {
-        return 0;
+        return credits;
     }
 
     /*
@@ -66,14 +73,18 @@ public class Student extends Person {
      * set credits
      * **/
     public void setCredits(double credits) {
+        this.credits = credits;
 
     }
 
     /*
     * The work method should take the param workedHours. Multiply it by the double wage and add the result to the current amount of money
+    * add amount of worked hours passed to this.workedHours
     * @param workedHours amount of hours a student can work
     * **/
     public void work(int workedHours){
+        this.money += workedHours * wage;
+        this.workedHours += workedHours;
 
 
 
@@ -85,6 +96,7 @@ public class Student extends Person {
     *
     * **/
     public void learn(int classHours){
+        this.credits += classHours/10;
 
     }
 
