@@ -26,4 +26,23 @@ public class TeacherTest {
         Assert.assertEquals(expected,actual,.0000000001f);
 
     }
+
+    @Test
+    public void testTeachMultipleStudents(){
+
+        Student student = new Student("Jamil","Braniham","test@test.com","imafraidofcommitment");
+        Student student1 = new Student("Jamil","Braniham","test@test.com","imafraidofcommitment");
+
+        Student[] students = {student,student1};
+
+        teacher.teachMultipleStudents(students,5);
+        double expected = 1.0;
+
+        double actual = 0;
+
+        actual += student.getCredits() + student1.getCredits();
+
+        Assert.assertEquals(expected,actual,.0000000001f);
+
+    }
 }
