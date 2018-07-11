@@ -6,9 +6,9 @@ public class Teacher extends Person {
 
 
     /*
-    * This method will allow a teacher to teach a student
-    * how can this be done?
-    * **/
+     * This method will allow a teacher to teach a student
+     * how can this be done?
+     * **/
     public void teach(Student student,int hoursTaught){
 
         student.learn(hoursTaught);
@@ -20,6 +20,11 @@ public class Teacher extends Person {
     * hint you need a forloop
     * **/
     public void teachMultipleStudents(Student[] students, int hoursTaught){
+
+        for (int i = 0; i < students.length; i++){
+            //teach each student like before hint: to access a student use students[i]
+
+        }
 
 
     }
