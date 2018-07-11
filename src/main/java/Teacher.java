@@ -11,5 +11,6 @@ public class Teacher extends Person {
     * **/
     public void teach(Student student,int hoursTaught){
 
+        student.learn(hoursTaught);
     }
 }
