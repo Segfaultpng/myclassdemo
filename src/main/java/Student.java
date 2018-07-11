@@ -7,6 +7,9 @@ public class Student extends Person {
     private double credits;
 
 
+    private static int id = 0;
+
+
 
 
     private final double wage = 10.00; //an hr
@@ -18,6 +21,8 @@ public class Student extends Person {
         this.workedHours = 0;
         this.money = 0.00;
         this.credits = 0;
+
+        this.id += 1;
     }
 
 
@@ -75,6 +80,10 @@ public class Student extends Person {
     public void setCredits(double credits) {
         this.credits = credits;
 
+    }
+
+    public static int getId() {
+        return id;
     }
 
     /*
