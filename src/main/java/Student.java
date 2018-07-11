@@ -96,7 +96,7 @@ public class Student extends Person {
     *
     * **/
     public void learn(int classHours){
-        this.credits += classHours/10;
+        this.credits += (double) classHours/10;
 
     }
 
