@@ -24,6 +24,7 @@ public class Teacher extends Person {
         for (int i = 0; i < students.length; i++){
             //teach each student like before hint: to access a student use students[i]
 
+            students[i].learn(hoursTaught);
         }
 
 

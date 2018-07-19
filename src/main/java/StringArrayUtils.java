@@ -16,6 +16,12 @@ public class StringArrayUtils {
     * **/
     public String findString(String tofind){
 
+        for (int i = 0; i < coolstrings.length; i++) {
+            if (tofind.equals(coolstrings[i])){
+
+                return coolstrings[i];
+            }
+        }
         return null;
     }
 
@@ -36,8 +42,12 @@ public class StringArrayUtils {
     *
     * hint to get the each string you can use coolstrings[some variable tied to the loop]
     * **/
-    public String printStrings(String tofind){
+    public String printStrings() {
 
+        for (int i = 0; i < coolstrings.length; i ++) {
+            System.out.println(coolstrings);
+
+        }
         return null;
     }
 }
