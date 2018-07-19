@@ -39,4 +39,12 @@ public class IntegerArrayUtils {
 
         return null;
     }
+
+
+    /*
+    * This method should add all ints in the coolInt array and return its sum
+    * **/
+    public Integer addAll(){
+        return -1;
+    }
 }
