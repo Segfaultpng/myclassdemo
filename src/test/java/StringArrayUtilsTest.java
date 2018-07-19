@@ -2,14 +2,16 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class StringArrayUtils {
+public class StringArrayUtilsTest {
 
     StringArrayUtils stringArrayUtils;
 
 
     @Before
     public void setup(){
-        stringArrayUtils = new StringArrayUtils();
+
+        String[] testing = {"Jamil","Does","Not","Like","Commitment"};
+        stringArrayUtils = new StringArrayUtils(testing);
     }
 
     @Test

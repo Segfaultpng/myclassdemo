@@ -44,10 +44,12 @@ public class StringArrayUtils {
     * **/
     public String printStrings() {
 
+        String result = "";
         for (int i = 0; i < coolstrings.length; i ++) {
-            System.out.println(coolstrings);
+            result += coolstrings[i] + "\n";
+            System.out.println(coolstrings[i]);
 
         }
-        return null;
+        return result;
     }
 }
