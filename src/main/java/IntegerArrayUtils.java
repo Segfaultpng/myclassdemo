@@ -1,5 +1,7 @@
 public class IntegerArrayUtils {
     private Integer[] coolInts;
+    private int someint;
+    private Integer someinteer;
 
     public IntegerArrayUtils(Integer[] theints){
 
@@ -14,6 +16,15 @@ public class IntegerArrayUtils {
      * if you don't return -1
      * **/
     public Integer findInt(Integer tofind){
+
+        for (int i = 0; i < coolInts.length; i++) {
+            if (tofind == (coolInts[i])){
+
+                return coolInts[i];
+            }
+
+        }
+
 
         return null;
     }
@@ -37,7 +48,14 @@ public class IntegerArrayUtils {
      * **/
     public String printInt(){
 
-        return null;
+        String result = "";
+
+        for (int i = 0; i < coolInts.length; i ++) {
+            result += coolInts[i].toString() + "\n";
+            System.out.println(coolInts[i]);
+        }
+
+        return result;
     }
 
 
@@ -45,6 +63,16 @@ public class IntegerArrayUtils {
     * This method should add all ints in the coolInt array and return its sum
     * **/
     public Integer addAll(){
-        return -1;
+        Integer result = 0;
+
+        for (int i = 0; i < coolInts.length; i ++) {
+            result += coolInts[i];
+            System.out.println(coolInts[i]);
+        }
+
+
+        return result;
     }
+
+
 }
